@@ -2,6 +2,7 @@
 
 namespace Rappasoft\LaravelAuthenticationLog;
 
+
 use Illuminate\Auth\Events\Failed;
 use Illuminate\Auth\Events\Login;
 use Illuminate\Auth\Events\Logout;
@@ -17,8 +18,8 @@ use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class LaravelAuthenticationLogServiceProvider extends PackageServiceProvider
 {
-    public function configurePackage(Package $package): void
-    {
+
+    public function configurePackage(Package $package): void {
         $package
             ->name('laravel-authentication-log')
             ->hasConfigFile()
@@ -33,4 +34,5 @@ class LaravelAuthenticationLogServiceProvider extends PackageServiceProvider
         $events->listen(config('authentication-log.events.logout', Logout::class), config('authentication-log.listeners.logout', LogoutListener::class));
         $events->listen(config('authentication-log.events.other-device-logout', OtherDeviceLogout::class), config('authentication-log.listeners.other-device-logout', OtherDeviceLogoutListener::class));
     }
+
 }

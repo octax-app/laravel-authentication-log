@@ -13,11 +13,13 @@ php artisan migrate
 ```
 
 You can publish the view/email files with:
+
 ```bash
 php artisan vendor:publish --provider="Rappasoft\LaravelAuthenticationLog\LaravelAuthenticationLogServiceProvider" --tag="authentication-log-views"
 ```
 
 You can publish the config file with:
+
 ```bash
 php artisan vendor:publish --provider="Rappasoft\LaravelAuthenticationLog\LaravelAuthenticationLogServiceProvider" --tag="authentication-log-config"
 ```
@@ -99,7 +101,9 @@ If you would like to listen to your own events you may override them in the pack
 
 ### Example event override
 
-You may notice that Laravel [fires a Login event when the session renews](https://github.com/laravel/framework/blob/master/src/Illuminate/Auth/SessionGuard.php#L149) if the user clicked 'remember me' when logging in. This will produce empty login rows each time which is not what we want. The way around this is to fire your own `Login` event instead of listening for Laravels.
+You may notice that Laravel [fires a Login event when the session renews](https://github.com/laravel/framework/blob/master/src/Illuminate/Auth/SessionGuard.php#L149) if the user
+clicked 'remember me' when logging in. This will produce empty login rows each time which is not what we want. The way around this is to fire your own `Login` event instead of
+listening for Laravels.
 
 You can create a Login event that takes the user:
 

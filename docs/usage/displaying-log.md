@@ -3,9 +3,11 @@ title: Displaying the Log
 weight: 3
 ---
 
-You can set up your own views and paginate the logs using the user relationship as normal, or if you also use my [Livewire Tables](https://github.com/rappasoft/laravel-livewire-tables) plugin then here is an example table:
+You can set up your own views and paginate the logs using the user relationship as normal, or if you also use
+my [Livewire Tables](https://github.com/rappasoft/laravel-livewire-tables) plugin then here is an example table:
 
-**Note:** This example uses the `jenssegers/agent` package which is included by default with Laravel Jetstream as well as `jamesmills/laravel-timezone` for displaying timezones in the users local timezone. Both are optional, modify the table to fit your needs.
+**Note:** This example uses the `jenssegers/agent` package which is included by default with Laravel Jetstream as well as `jamesmills/laravel-timezone` for displaying timezones in
+the users local timezone. Both are optional, modify the table to fit your needs.
 
 ```php
 <?php

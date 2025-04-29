@@ -14,4 +14,5 @@ Welcome to the [Laravel Authentication Log](https://github.com/rappasoft/laravel
 
 I will do my best to document all features and configurations of this plugin.
 
-Laravel Authentication Log is a package which tracks your user's authentication information such as login/logout time, IP, Browser, Location, etc. as well as sends out notifications via mail, slack, or sms for new devices and failed logins.
+Laravel Authentication Log is a package which tracks your user's authentication information such as login/logout time, IP, Browser, Location, etc. as well as sends out
+notifications via mail, slack, or sms for new devices and failed logins.

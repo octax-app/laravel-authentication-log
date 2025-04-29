@@ -5,7 +5,7 @@ weight: 2
 
 Notifications may be sent on the `mail`, `nexmo`, and `slack` channels but by **default notify via email**.
 
-You may define a `notifyAuthenticationLogVia` method  on your authenticatable models to determine which channels the notification should be delivered on:
+You may define a `notifyAuthenticationLogVia` method on your authenticatable models to determine which channels the notification should be delivered on:
 
 ```php
 public function notifyAuthenticationLogVia()
@@ -14,7 +14,9 @@ public function notifyAuthenticationLogVia()
 }
 ```
 
-You must install the [Slack](https://laravel.com/docs/8.x/notifications#routing-slack-notifications) and [Nexmo](https://laravel.com/docs/8.x/notifications#routing-sms-notifications) drivers to use those routes and follow their documentation on setting it up for your specific authenticatable models.
+You must install the [Slack](https://laravel.com/docs/8.x/notifications#routing-slack-notifications)
+and [Nexmo](https://laravel.com/docs/8.x/notifications#routing-sms-notifications) drivers to use those routes and follow their documentation on setting it up for your specific
+authenticatable models.
 
 ## New Device Notifications
 
@@ -30,4 +32,5 @@ If the `torann/geoip` package is installed, it will attempt to include location 
 
 You can turn this off within the configuration for each template.
 
-**Note:** By default when working locally, no location will be recorded because it will send back the `default address` from the `geoip` config file. You can override this behavior in the email templates.
+**Note:** By default when working locally, no location will be recorded because it will send back the `default address` from the `geoip` config file. You can override this behavior
+in the email templates.
